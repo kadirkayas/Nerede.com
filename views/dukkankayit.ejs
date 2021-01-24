@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css.css" type="text/css" rel="stylesheet"/>
+    <title>Hello, world!</title>
+    <!-- CSS -->
+      <style type="text/css">
+       .body-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+                .logo, .subLogo {
+                    max-width: 80%;
+                    height: auto;
+                }
+                .subLogo {
+                    max-width: 40%;
+                }
+                .jumbotron {
+                    border-radius: 0 !important;
+                }
+                .btn:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+                nav.bg-darkRed {
+                    background-color: #3a2c2c !important;
+                }
+                body {
+                    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(https://i.hizliresim.com/EWrSoC.png);
+                    background-size: auto,25%;
+                }
+                .card-3 {
+                    flex: 0 0 30% !important;
+                    margin-bottom: 15px !important;
+                }
+                .mt-6 {
+                    margin-top: 6em !important;
+                }
+        </style>
+  </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron text-center" style="margin-bottom:0">
+    
+                <a href="homePage.html"><img class="logo" src="https://i.hizliresim.com/iBBqwJ.png" /></a>
+                <br>
+                <img class="subLogo" src="https://i.hizliresim.com/QjDdRq.png" width="300px" alt="Web Sitesi Alt Logo" />
+                <br> 
+            </div>
+            <nav class="navbar navbar-expand-md bg-darkRed navbar-dark">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/stokekle">Stok ekle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/urunekle">Ürün ekle</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline flex-fill input-group my-2 my-sm-0 mr-3">
+                        <input id="productSearch" class="form-control flex-fill" type="search" placeholder="Ürün Ara" aria-label="Search">
+                        <div class="input-group-append">
+                            <button id="searchButton" class="btn btn-outline-danger font-weight-bold" type="submit"> Nerede Acaba</button>
+                        </div>
+                    </div>
+                    <a href="/dukkangiris" class=" btn my-2 my-sm-0 mr-2 font-weight-bold bg-danger text-light">Dükkan Girişi</a>
+                    <a href="/dukkankayit" class=" btn my-2 my-sm-0 font-weight-bold bg-danger text-light">Dükkan Kayıt</a>
+                </div>
+            </nav>
+    <form method="post" class="container" action="dukkanekle">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Dükkan Adi</span>
+            </div>
+            <input type="text" name="dukkanAdi" class="form-control" placeholder="Dükkan Adi" />
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Kullanici Adi</span>
+            </div>
+            <input type="text" name="kullaniciAdi" class="form-control" placeholder="Kullanici Adi" />
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Sifre</span>
+            </div>
+            <input type="password" name="sifre" class="form-control" placeholder="Sifre" />
+        </div>
+        <button type="submit"  class="btn btn-outline-danger font-weight-bold " id="Send">Yeni Dükkan Ekle</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
